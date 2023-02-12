@@ -37,7 +37,7 @@ export default function Signin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:5001/api/auth";
+      const url = "https://backend-entretien-crm-mern.onrender.com/api/auth";
       const { data: res } = await axios.post(url, data);
       localStorage.setItem("token", res.data);
       navigate("/acceuil");
@@ -192,6 +192,7 @@ export default function Signin() {
               </Grid>
               <Button
                 type="submit"
+                label="Se connecter"
                 fullWidth
                 variant="contained"
                 sx={{
