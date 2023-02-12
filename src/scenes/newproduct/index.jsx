@@ -1,15 +1,9 @@
 import { Check } from "@mui/icons-material";
 import {
   Box,
-  Button,
-  FilledInput,
   FormControl,
-  FormHelperText,
-  IconButton,
-  InputAdornment,
   InputLabel,
   OutlinedInput,
-  TextField,
   Typography,
 } from "@mui/material";
 import Header from "components/Header";
@@ -17,7 +11,7 @@ import React from "react";
 
 const NewProduct = () => {
   return (
-    <Box m="1.5rem 2.5rem" mt="7rem" height="75vh">
+    <Box m="1.5rem 2.5rem" mt="7rem" height="100%">
       <Typography
         fontSize={"12px"}
         color="#919EAB"
@@ -25,7 +19,7 @@ const NewProduct = () => {
       >{`Tableau de bord > Les Produits`}</Typography>
       <Header title="Nouveau produit" color="black" fontSize="24px" />
       <Box
-        height="48vh"
+        height="54vh"
         width="100%"
         mt="2.5rem"
         sx={{
@@ -55,13 +49,13 @@ const NewProduct = () => {
             INFORMATIONS SUR LE PRODUIT
           </Typography>
           <Box width="100%">
-            <FormControl sx={{ m: 1, fontSize: 0, width: "48.95%" }}>
+            <FormControl sx={{ m: 1, fontSize: 0, width: "47%" }}>
               <InputLabel shrink="true" htmlFor="outlined-adornment-amount">
                 ID produit
               </InputLabel>
               <OutlinedInput label="ID produit" />
             </FormControl>
-            <FormControl sx={{ m: 1, fontSize: 0, width: "48.95%" }}>
+            <FormControl sx={{ m: 1, fontSize: 0, width: "47%" }}>
               <InputLabel shrink="true" htmlFor="outlined-adornment-amount">
                 Titre
               </InputLabel>
@@ -69,13 +63,13 @@ const NewProduct = () => {
             </FormControl>
           </Box>
           <Box width="100%">
-            <FormControl sx={{ m: 1, fontSize: 0, width: "48.95%" }}>
+            <FormControl sx={{ m: 1, fontSize: 0, width: "47%" }}>
               <InputLabel shrink="true" htmlFor="outlined-adornment-amount">
                 Stock
               </InputLabel>
               <OutlinedInput label="Stock" />
             </FormControl>
-            <FormControl sx={{ m: 1, fontSize: 0, width: "48.95%" }}>
+            <FormControl sx={{ m: 1, fontSize: 0, width: "47%" }}>
               <InputLabel shrink="true" htmlFor="outlined-adornment-amount">
                 Catégorie
               </InputLabel>
@@ -83,27 +77,27 @@ const NewProduct = () => {
             </FormControl>
           </Box>
 
-          <FormControl fullWidth sx={{ m: 1, pr: "1rem" }}>
+          <FormControl fullWidth sx={{ m: 1, pr: "4.8rem" }}>
             <InputLabel shrink="true" htmlFor="outlined-adornment-amount">
               Description
             </InputLabel>
             <OutlinedInput id="outlined-adornment-amount" label="Stock" />
           </FormControl>
           <Box width="100%">
-            <FormControl sx={{ m: 1, fontSize: 0, width: "48.95%" }}>
+            <FormControl sx={{ m: 1, fontSize: 0, width: "47%" }}>
               <InputLabel shrink="true" htmlFor="outlined-adornment-amount">
                 Marque
               </InputLabel>
               <OutlinedInput label="Marque" />
             </FormControl>
-            <FormControl sx={{ m: 1, fontSize: 0, width: "48.95%" }}>
+            <FormControl sx={{ m: 1, fontSize: 0, width: "47%" }}>
               <InputLabel shrink="true" htmlFor="outlined-adornment-amount">
                 Remise
               </InputLabel>
               <OutlinedInput label="Remise" />
             </FormControl>
           </Box>
-          <Box position="absolute" right="5%">
+          <Box position="absolute" right="6.8%">
             <Box
               type="submit"
              
